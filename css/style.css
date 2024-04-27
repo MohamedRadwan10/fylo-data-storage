@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+    font-size: 14px;
+    font-family: Raleway;
+}
+.fylo-storage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 100vh;
+  background-image: url(../image/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 100% 130%;
+  background-size: contain;
+  background-color: hsl(229, 57%, 11%);
+}
+.fylo {
+  width: 20%;
+  background-color: hsl(228, 56%, 26%);
+  padding: 30px;
+  border-radius: 10px 80px 10px 10px;
+  box-shadow:   0em 0.5em 10em  rgba(0, 0, 0, 0.5);
+}
+.icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+.icon img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.storage {
+  position: relative;
+  width: 30%;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 2%;
+  background-color: hsl(228, 56%, 26%);
+  box-shadow:   0em 0.5em 10em  rgba(0, 0, 0, 0.5);
+}
+.storage-p {
+  color: hsl(229, 7%, 55%);
+}
+.storage-p mark {
+  background-color: transparent;
+  color: hsl(243, 100%, 93%);
+}
+.flex-GB {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(243, 100%, 93%);
+  font-size: 12px;
+}
+.progress {
+  width: 100%;
+  padding: 1px;
+  border-radius: 35px;
+  background-color: hsl(223, 59%, 18%);
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+progress {
+  position: relative;
+  padding: 10px;
+  width: 81.5%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 163, 153, 1) 1%,
+    rgba(255, 77, 151, 1) 100%
+  );
+  border-radius: 35px;
+}
+progress::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 2.5px;
+  right: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.squar{
+    position: absolute;
+    top: -25%;
+    right: 8%;
+    width: 120px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 10px;
+
+}
+.div1{
+    position: absolute;
+    top: 8px;
+    right: 46px;
+    width: 20%;
+    height: 20px;
+    background-color: hsl(228, 56%, 26%);
+    margin-top: 20px;
+    transform: skewX(45deg);
+    z-index: 2;
+}
+.bold{
+    font-size: 12px;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: hsl(229, 7%, 55%);
+}
+.bold b{
+    font-size: 28px;
+    color: #000;
+    margin-right: 8px;
+}
+.squar:after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    right: 0;
+    background-color: #fff;
+}
+@media (max-width:425px){
+    .fylo-storage{
+        flex-direction: column;
+        gap: 10px;
+        background-image:url(../image/bg-mobile.png);
+        background-size: cover ;
+        background-position: center;
+    }
+    .fylo{
+        width: 80%;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .storage{
+        padding-bottom: 50px;
+        width: 80%;
+    }
+    .div1{
+        opacity: 0;
+    }
+    .squar{
+        width: 50%;
+        height: 70px;
+        top:  80%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+    }
+    .squar::after{
+        opacity: 0;
+    }
+    .bold b{
+        font-size: 32px;
+    }
+}
+@media (max-width:375px){
+    .fylo-storage{
+        flex-direction: column;
+        gap: 10px;
+        background-image:url(../image/bg-mobile.png);
+        background-size: cover ;
+        background-position: center;
+    }
+    .fylo{
+        width: 80%;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .storage{
+        padding-bottom: 50px;
+        width: 80%;
+    }
+    .div1{
+        opacity: 0;
+    }
+    .squar{
+        width: 50%;
+        height: 70px;
+        top:  80%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+    }
+    .squar::after{
+        opacity: 0;
+    }
+    .bold b{
+        font-size: 32px;
+    }
+}
+@media (max-width:320px){
+    .fylo-storage{
+        flex-direction: column;
+        gap: 10px;
+        background-image:url(../image/bg-mobile.png);
+        background-size: cover ;
+        background-position: center;
+    }
+    .fylo{
+        width: 80%;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .storage{
+        padding-bottom: 50px;
+        width: 80%;
+    }
+    .div1{
+        opacity: 0;
+    }
+    .squar{
+        width: 50%;
+        height: 70px;
+        top:  80%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+    }
+    .squar::after{
+        opacity: 0;
+    }
+    .bold b{
+        font-size: 32px;
+    }
+}
